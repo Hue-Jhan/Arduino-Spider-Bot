@@ -1,2 +1,36 @@
 # Arduino-Spider-Bot
-Arduino based SpiderBot, remotely controllable
+Arduino-based SpiderBot, remotely controllable, with an obstacle detection and automated walk. Inspired by [TokyoBird](https://www.thingiverse.com/thing:4905975) spiderbot but with lots of changes.
+
+# 🔋 Parts and Robotics
+<img align="right" src="media/a.gif" width="450" />
+
+The 3d files are located in the `3d files` folder.
+ Other parts:
+- 8 servo motors (90° degrees position)
+- Ultrasonic sensor HC-SR04
+- Arduino Nano + Arduino Nano expansion board
+- Bluetooth Module Hc-05
+- Jumpers, screws n other stuff
+- 2 Lithium Batteries (+ case)
+- Buck Converter (+ ammeter)
+
+How to build: simply follow the instructions on `TokyoBird` page. \
+Here are the changes i've made:
+- I used the HC-05 module to send commands instead of the Serial Monitor
+- I used 2 lithium batteries soldered to a buck converter (the output is set to 5v, but if the batteries are 3.7v each you technically should be able to ignore the buck converter and attach the batteries directly to the board), my batteires were 4.2v each so i preferred to use the converter.
+- I updated the code to make it easily compatible with Bluetooth app ([this one](https://play.google.com/store/apps/details?id=com.giumig.apps.bluetoothserialmonitor&hl=en&gl=US&pli=1)).
+- Because the servos i used are not original, the fins are too big to fit in the 3d printed legs, so i used my soldering iron to make the gaps bigger and i fixed the fins with some tape, although glue would be better.
+- I added a shell to cover all the cables (u can find it in the 3d print files folder).
+- Modified some animations to avoid issued related to voltage supply and current, i noticed that if the bot is not powered by batteries (so simply by pc cable) there can be current shortages mid-animations, so i amplified some delays and made some changes.
+
+# 💻 Code
+
+The **`first code`** is quite simple, every second or so the hc05 bluetooth module checks for input to send to the robot, it serial prints them (for debugging purposes) and sends the data to the robot which will execute the animations. Unfortunately there is no way to make the walking animation possible using a joystick, as the walking functions are not simple motors but complex things. The only way to use it is to push the Walk Forward button every time.... yeah its annoying but its all i can do. I customized the buttons on the right:
+- Triangle: wink animation, the robot says hello
+- Square: sit animationn, the robot slowly sits, does weird poses and goes back up
+- Circle: twist animation, i cannot even describe it, the robot twists all its legs in and out
+- X: sit2 animation, the robot sits (and doesnt stand up)
+
+You can add more animation as the Select button and the Start button are not used.
+
+The **`second code`** is the automated walk code, it uses the ultrasonic sensor to see if anything is in a range of a few centimiters, and if there is, the robots slowly backs up and changes direction. 
