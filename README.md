@@ -4,8 +4,8 @@ Arduino-based SpiderBot, remotely controllable, with an obstacle detection and a
 # 🔋 Parts and Robotics
 <img align="right" src="media/a.gif" width="450" />
 
-The 3d files are located in the `3d files` folder.
- Other parts:
+The 3d files are located in the `3d files` folder. \
+Other parts:
 - 8 servo motors (90° degrees position)
 - Ultrasonic sensor HC-SR04
 - Arduino Nano + Arduino Nano expansion board
@@ -33,4 +33,9 @@ The **`first code`** is quite simple, every second or so the hc05 bluetooth modu
 
 You can add more animation as the Select button and the Start button are not used.
 
-The **`second code`** is the automated walk code, it uses the ultrasonic sensor to see if anything is in a range of a few centimiters, and if there is, the robots slowly backs up and changes direction. 
+The **`second code`** is the automated walk code, it uses the ultrasonic sensor to see if anything is in a range of a few centimiters, and if there is, the robots slowly backs up and changes direction. \
+Here is a video showcasing it, i didnt solder the batteries yet so it was powered by the pc
+
+https://github.com/Hue-Jhan/Arduino-Spider-Bot/assets/75088696/948d0f76-3dea-49bb-976c-75f6bf47370e
+
+
