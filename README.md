@@ -1,5 +1,5 @@
 # Arduino-Spider-Bot
-Arduino-based SpiderBot, remotely controllable, with an obstacle detection and automated walk. Inspired by [TokyoBird](https://www.thingiverse.com/thing:4905975) spiderbot but with lots of changes.
+Arduino-based SpiderBot, remotely controllable, with obstacle detection and automated walk. Inspired by [TokyoBird](https://www.thingiverse.com/thing:4905975) but with lots of changes.
 
 # 🔋 Parts and Robotics
 <img align="right" src="media/a.gif" width="450" />
@@ -25,7 +25,9 @@ Here are the changes i've made:
 
 # 💻 Code
 
-The **`first code`** is quite simple, every second or so the hc05 bluetooth module checks for input to send to the robot, it serial prints them (for debugging purposes) and sends the data to the robot which will execute the animations. Unfortunately there is no way to make the walking animation possible using a joystick, as the walking functions are not simple motors but complex things. The only way to use it is to push the Walk Forward button every time.... yeah its annoying but its all i can do. I customized the buttons on the right:
+The **`first code`** is quite simple, every second or so the hc05 bluetooth module checks for input to send to the robot, it serial prints them (for debugging purposes) and sends the data to the robot which will execute the animations. 
+
+Unfortunately there is no way to make the walking animation possible using a joystick, as the walking functions are not simple motors but complex things. The only way to use it is to push the Walk Forward button every time.... yeah its annoying but its all i can do. I customized the buttons on the right:
 - Triangle: wink animation, the robot says hello
 - Square: sit animationn, the robot slowly sits, does weird poses and goes back up
 - Circle: twist animation, i cannot even describe it, the robot twists all its legs in and out
@@ -38,4 +40,4 @@ Here is a video showcasing it, i didnt solder the batteries yet so it was powere
 
 https://github.com/Hue-Jhan/Arduino-Spider-Bot/assets/75088696/948d0f76-3dea-49bb-976c-75f6bf47370e
 
-
+Remember to insert a switch between the battery case and the dc converter or othwerise it will **blow up** due to overheating, as the buck converter always tries to "get" current from the batteries
