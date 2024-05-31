@@ -1,5 +1,5 @@
 # Arduino-Spider-Bot
-Arduino-based SpiderBot, remotely controllable, with obstacle detection and automated walk. Inspired by [TokyoBird](https://www.thingiverse.com/thing:4905975) but with lots of changes.
+Arduino-based SpiderBot, remotely controllable, with obstacle detection and automated walk. Inspired by TokyoBird but with lots of changes.
 
 # 🔋 Parts and Robotics
 <img align="right" src="media/a.gif" width="450" />
@@ -14,7 +14,7 @@ Other parts:
 - 2 Lithium Batteries (+ case)
 - Buck Converter (+ ammeter)
 
-How to build: simply follow the instructions on `TokyoBird` page. \
+How to build: simply follow the instructions on [TokyoBird](https://www.thingiverse.com/thing:4905975)'s page. \
 Here are the changes i've made:
 - I used the HC-05 module to send commands instead of the Serial Monitor
 - I used 2 lithium batteries soldered to a buck converter (the output is set to 5v, but if the batteries are 3.7v each you technically should be able to ignore the buck converter and attach the batteries directly to the board), my batteires were 4.2v each so i preferred to use the converter.
