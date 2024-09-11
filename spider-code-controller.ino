@@ -95,6 +95,11 @@ void execute(char data) {
     case 'X':
       stand1();
       break;
+    case 'S':
+      digitalWrite(13, HIGH);
+      delay(500);
+      digitalWrite(13, LOW);
+      break;
     default:
       Serial.println("error xd");
       break;
