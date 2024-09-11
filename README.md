@@ -29,10 +29,10 @@ Here are the changes i've made:
 # 💻 Code
 
 The **`first code`** is quite simple, every second or so the hc05 bluetooth module checks for input to send to the robot, it serial prints them (for debugging purposes) and sends the data to the robot which will execute the animations. 
-Unfortunately there is no way to make the walking animation possible using a joystick, as the walking functions are not simple motors but complex things. The only way to use it is to push the Walk Forward button every time.... yeah its annoying but its all i can do. I customized the buttons on the right:
+Unfortunately there is no way to make the walking animation possible using a joystick, as the walking functions are not simple motors but complex things. The only way to use it is to push the Walk Forward button every time.... yeah its annoying but its all i can do. I customized the buttons on the right: <img align="right" src="media/gamepad.png" width="350" />
 - Triangle: wink animation, the robot says hello
-- Square: sit animationn, the robot slowly sits, does weird poses and goes back up
-- Circle: twist animation, i cannot even describe it, the robot twists all its legs in and out
+- Square: sit animationn, the bot slowly sits and goes back up 
+- Circle: twist animation, the bot twists all its legs in and out 
 - X: sit2 animation, the robot sits (and doesnt stand up)
 - Select: uses taser
 
