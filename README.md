@@ -43,7 +43,7 @@ https://github.com/Hue-Jhan/Arduino-Spider-Bot/assets/75088696/948d0f76-3dea-49b
 
 # ⚡ Taser
 
-Using a relay i can remotely activate a high voltage generator, it uses the same lithium batteries as the other components. By the way it hurts, a lot.
+Using a relay i can remotely activate a high voltage generator, it uses the same lithium batteries as the other components, its activated by the Select Button on the Android Bluetooth controller app. Do not use it against electronic components or else they might get damaged, and by the way it hurts, a lot.
 
 https://github.com/user-attachments/assets/529a7c71-5bb1-40c3-ae3d-1470e08477f8
 
