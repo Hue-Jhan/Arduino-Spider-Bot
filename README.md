@@ -19,7 +19,7 @@ Other parts:
 How to build: simply follow the instructions on [TokyoBird](https://www.thingiverse.com/thing:4905975)'s page. <img align="right" src="taser_relay.png" width="150" /> \
 Here are the changes i've made: 
 - I used the HC-05 module to send commands instead of the Serial Monitor.
-- I attached a Taser to it, i can use it whenever i want to. pic of it (and the relay) to the right ---> 
+- I attached a Taser to it, i can use it whenever i want to. pic of it + relay to the right ---> 
 - I used 2 lithium batteries soldered to a buck converter (the output is set to 5v, but if the batteries are 3.7v each you technically should be able to ignore the buck converter and attach the batteries directly to the board), my batteires were 4.2v each so i preferred to use the converter.
 - I updated the code to make it easily compatible with Bluetooth app ([this one](https://play.google.com/store/apps/details?id=com.giumig.apps.bluetoothserialmonitor&hl=en&gl=US&pli=1)).
 - Because the servos i used are not original, the fins are too big to fit in the 3d printed legs, so i used my soldering iron to make the gaps bigger and i fixed the fins with some tape, although glue would be better.
