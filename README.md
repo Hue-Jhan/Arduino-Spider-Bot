@@ -16,7 +16,7 @@ Other parts:
 - High voltage generator (5-8v input : 50.000v output)
 - Small relay
 
-How to build: simply follow the instructions on [TokyoBird](https://www.thingiverse.com/thing:4905975)'s page. <img align="right" src="taser_relay.png" width="150" /> \
+How to build: simply follow the instructions on [TokyoBird](https://www.thingiverse.com/thin:4905975)'s page. <img align="right" src="taser_relay.png" width="150" /> \
 Here are the changes i've made: 
 - I used the HC-05 module to send commands instead of the Serial Monitor.
 - I attached a Taser to it, i can use it whenever i want to. pic of it + relay to the right ---> 
